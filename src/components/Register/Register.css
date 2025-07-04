@@ -1,0 +1,22 @@
+@media (max-width:600px){
+    .form-box{
+        height: 70%;
+        width: 70%;
+    }
+    .form-box h1{
+        font-size:30px;
+        margin-top:-25px;
+    }
+    .label{
+        font-size: 18px;
+    }
+    .input{
+        height: 5vh;
+        font-size: 16px;
+    }
+    .signup{
+        height: 5vh;
+        font-size: 18px;
+        
+    }
+}
