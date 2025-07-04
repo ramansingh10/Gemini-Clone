@@ -6,7 +6,7 @@ import SideBar from './components/SideBar/SideBar'
 import Main from './components/Main/Main'
 import Register from './components/Register/Register'
 import { Route, Routes } from 'react-router-dom'
-import Login from './components/Login/LOgin'
+import Login from './components/Login/Login'
 import HomePage from './components/HomePage/HomePage'
 
 function App() {
