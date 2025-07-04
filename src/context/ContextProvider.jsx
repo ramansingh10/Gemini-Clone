@@ -65,7 +65,9 @@ const ContextProvider = (props) => {
   };
 
   return (
-    <Context.Provider value={contextValue}>{props.children}</Context.Provider>
+    <Context.Provider value={contextValue}>
+      {props.children}
+    </Context.Provider>
   );
 };
 

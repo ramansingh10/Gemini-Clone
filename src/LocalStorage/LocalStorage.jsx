@@ -1,5 +1,3 @@
-import { parse } from "postcss";
-
 export const saveUserToLocalStorage = (newUser) => {
   // Get existing users array (if any)
   const existing = JSON.parse(localStorage.getItem('users')) || [];
