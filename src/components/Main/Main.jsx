@@ -12,7 +12,6 @@ const navigate = useNavigate();
 const [name, setName]=useState("");
  useEffect(()=>{
   const storedName = JSON.parse(localStorage.getItem("loggedInUser"));
-  console.log(storedName.name)
   setName(storedName.name)
  },[]);
 
@@ -110,7 +109,6 @@ const [name, setName]=useState("");
             </div>
           </div>
         )}
-
         <div className="main-bottom">
           <div className="search-box">
             <input
@@ -122,8 +120,8 @@ const [name, setName]=useState("");
               placeholder="Enter a prompt here"
             />
             <div>
-              <img src={assets.gallery_icon} alt="" />
-              <img src={assets.mic_icon} alt="" />
+              <img className="icon" src={assets.gallery_icon} alt="" />
+              <img className="icon" src={assets.mic_icon} alt="" />
               {input ? (
                 <img
                   onClick={() => {

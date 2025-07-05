@@ -210,4 +210,11 @@ body.dark-mode-color .search-box img {
   .logout{
     display:block;
   }
+  .cards{
+    display: none;
+  }
+  .icon{
+    width: 20px;
+    height: 20px;
+  }
 }
