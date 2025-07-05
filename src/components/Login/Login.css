@@ -8,12 +8,19 @@
         margin-top:-25px;
     }
     .input{
+        width: 130%;
         height: 5vh;
         font-size: 16px;
     }
     .login{
         width: 100%;
-        font-size: 18px;
-        
+        font-size: 16px;
+        padding: 5px;
+    }
+    .bottom{
+        font-size: 12px;
+    }
+    .link{
+        font-size: 12px;
     }
 }

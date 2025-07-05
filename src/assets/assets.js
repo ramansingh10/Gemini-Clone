@@ -16,6 +16,7 @@ import gemini_icon from './gemini_icon.png'
 import sun from './sun.webp'
 import moon from './moon.png'
 import bg from './bg.jpg'
+import logout from './logout.png'
 
 
 export const assets = {
@@ -36,5 +37,6 @@ export const assets = {
     code_icon,
     send_icon,
     gemini_icon,
-    bg
+    bg,
+    logout
 }

@@ -14,7 +14,6 @@ const Login = () => {
     const check = checkUserToLocalStorage(user);
     if (check.success) {
       alert("Login Successfull");
-      console.log("Logged-in-user:", check.user);
       navigate("/main");
     } else {
       alert(check.message);
@@ -56,11 +55,11 @@ const Login = () => {
           </button>
         </form>
         <div className="block text-center mt-4">
-        <p>
+        <p className="bottom">
           Don't have an account?
         </p>
         <Link to="/register">
-            <p className="text-blue-500">
+            <p className="link text-blue-500">
               Register
             </p>
           </Link>

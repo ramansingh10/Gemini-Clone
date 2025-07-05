@@ -2,17 +2,25 @@ import React, { useContext, useEffect, useState } from "react";
 import "./Main.css";
 import { assets } from "../../assets/assets";
 import { Context } from "../../context/ContextProvider";
+import { useNavigate } from "react-router-dom";
 
 const Main = () => {
   const [dark, setDark] = useState(()=>
   localStorage.getItem("theme")==="dark"
 );
+const navigate = useNavigate();
 const [name, setName]=useState("");
  useEffect(()=>{
   const storedName = JSON.parse(localStorage.getItem("loggedInUser"));
   console.log(storedName.name)
   setName(storedName.name)
  },[]);
+
+ const logout = ()=>{
+    localStorage.removeItem('loggedInUser','')
+    alert("Logged out successfully")
+    navigate('/login')
+  }
 
   useEffect(()=>{
     const root=document.body;
@@ -46,9 +54,12 @@ const [name, setName]=useState("");
             }}
             src={dark ? assets.sun : assets.moon}
             className="dark-mode"
-            alt=""
+            alt="darkmode"
           />
-          <img src={assets.user_icon} alt="" />
+          <img 
+          onClick ={logout}
+          src={assets.logout} alt="logout" className="logout"/>
+          <img src={assets.user_icon} alt="Profile" />
         </div>
       </div>
       <div className="main-container">
