@@ -15,7 +15,7 @@ const Login = () => {
     if (check.success) {
       alert("Login Successfull");
       console.log("Logged-in-user:", check.user);
-      navigate("/homepage");
+      navigate("/main");
     } else {
       alert(check.message);
     }
