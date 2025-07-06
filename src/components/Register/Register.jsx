@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './Register.css'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { saveUserToLocalStorage } from "../../LocalStorage/LocalStorage";
 
 const Register = () => {
@@ -8,6 +8,7 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const newUser={name,email,password}
+  const navigate= useNavigate();
   //localStorage.clear()
 
   const submitHandler = (e) => {
@@ -19,6 +20,7 @@ const Register = () => {
       setName("");
       setEmail("");
       setPassword("");
+      navigate('/login')
     }else{
       console.log("Registration failed")
     }
