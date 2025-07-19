@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
     try{
     const check = await axios.post(
-      "http://localhost:5000/user/login",
+      "https://gemini-clone-backend-d1up.onrender.com/user/login",
       user,
       {
         withCredentials: true,
