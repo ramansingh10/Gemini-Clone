@@ -17,7 +17,7 @@ const Register = () => {
     try{
     console.log(newUser);
     const response = await axios.post(
-      "http://localhost:5000/form/info/send",
+      "https://gemini-clone-backend-d1up.onrender.com/form/info/send",
       newUser,
       {
         withCredentials: true,
