@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-//import "./Register.css";
 import { Link, useNavigate } from "react-router-dom";
-//import { saveUserToLocalStorage } from "../../LocalStorage/LocalStorage";
 import axios from "axios";
 
 const Register = () => {
@@ -18,7 +16,6 @@ const Register = () => {
     e.preventDefault();
     try{
     console.log(newUser);
-    //const success = saveUserToLocalStorage(newUser);
     const response = await axios.post(
       "http://localhost:5000/form/info/send",
       newUser,

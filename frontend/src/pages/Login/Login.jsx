@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { checkUserToLocalStorage } from "../../LocalStorage/LocalStorage";
 import axios from "axios";
-//import "./Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -14,7 +12,6 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try{
-    //const check = checkUserToLocalStorage(user);
     const check = await axios.post(
       "http://localhost:5000/user/login",
       user,

@@ -1,13 +1,10 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import SideBar from './components/SideBar/SideBar'
-import Main from './components/Main/Main'
-import Register from './components/Register/Register'
+import SideBar from './pages/SideBar/SideBar'
+import Main from './pages/Main/Main'
+import Register from './pages/Register/Register'
 import { Route, Routes } from 'react-router-dom'
-import Login from './components/Login/Login'
-import HomePage from './components/HomePage/HomePage'
+import Login from './pages/Login/Login'
+import HomePage from './pages/HomePage/HomePage'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,9 +22,9 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<HomePage />}></Route>
-        <Route path="/main" element={<MainPage />}></Route>
         <Route path="/register" element={<Register/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
+        <Route path="/main" element={<MainPage />}></Route>
       </Routes>
     </>
   )
