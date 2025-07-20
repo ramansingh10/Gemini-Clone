@@ -44,7 +44,7 @@ const Register = () => {
 
   return (
     <div className="div-box bg-gray-600 flex h-screen w-screen items-center justify-center">
-      <div className="form-box bg-white dark:bg-gray-900 border-2 border-none rounded-md p-20">
+      <div className="form-box bg-white dark:bg-gray-900 border-2 border-none rounded-md p-10">
         <h1 className="text-4xl text-center mb-8 dark:text-white">Register</h1>
 
         <form onSubmit={submitHandler} className="max-w-md mx-auto">
